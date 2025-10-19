@@ -2,7 +2,7 @@
   <div class="container mt-4 carrinho-section">
     <h1 class="display-4 font-weight-normal">Carrinho De Compras</h1>
 
-    <div class="row mt-5">
+    <div class="row mt-4">
       <div class="col-lg-8">
         <div v-if="cartStore.items.length === 0" class="alert alert-info">
           Seu carrinho está vazio. Adicione alguns produtos!
