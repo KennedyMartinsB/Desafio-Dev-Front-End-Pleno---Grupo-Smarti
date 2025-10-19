@@ -3,10 +3,8 @@ import { ref, computed } from 'vue'
 
 // useCartStore
 export const useCarrinhoStore = defineStore('cart', () => {
-  // Estado: Array de objetos { product, quantity }
   const items = ref([])
 
-  // Getters (Computeds)
   const totalItens = computed(() => {
     return items.value.reduce((total, item) => total + item.quantity, 0)
   })
@@ -15,8 +13,7 @@ export const useCarrinhoStore = defineStore('cart', () => {
     return items.value.reduce((total, item) => total + item.product.price * item.quantity, 0)
   })
 
-  // Actions
-  function addToCart(product) {
+  function addCarrinho(product) {
     const existingItem = items.value.find((item) => item.product.id === product.id)
 
     if (existingItem) {
@@ -26,7 +23,7 @@ export const useCarrinhoStore = defineStore('cart', () => {
     }
   }
 
-  function removeFromCart(productId) {
+  function removerDoCarrinho(productId) {
     const index = items.value.findIndex((item) => item.product.id === productId)
 
     if (index !== -1) {
@@ -40,16 +37,21 @@ export const useCarrinhoStore = defineStore('cart', () => {
     }
   }
 
-  function removeAllOfProduct(productId) {
+  function removerTodosProdutos(productId) {
     items.value = items.value.filter((item) => item.product.id !== productId)
+  }
+
+  function clearCarrinho() {
+    items.value = []
   }
 
   return {
     items,
     totalItens,
     valorTotal,
-    addToCart,
-    removeFromCart,
-    removeAllOfProduct,
+    clearCarrinho,
+    addCarrinho,
+    removerDoCarrinho,
+    removerTodosProdutos,
   }
 })

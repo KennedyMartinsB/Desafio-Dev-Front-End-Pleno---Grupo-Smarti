@@ -8,6 +8,7 @@ const router = createRouter({
     {
       path: '/',
       redirect: '/produtos',
+      component: ProductsView,
     },
     {
       path: '/produtos',

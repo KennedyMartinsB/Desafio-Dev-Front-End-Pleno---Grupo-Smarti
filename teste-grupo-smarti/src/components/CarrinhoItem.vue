@@ -23,16 +23,16 @@
 
       <div class="btn-group" role="group">
         <button
-          @click="cartStore.removeFromCart(item.product.id)"
+          @click="cartStore.removerDoCarrinho(item.product.id)"
           class="btn btn-sm btn-outline-danger"
         >
           -
         </button>
-        <button @click="cartStore.addToCart(item.product)" class="btn btn-sm btn-outline-success">
+        <button @click="cartStore.addCarrinho(item.product)" class="btn btn-sm btn-outline-success">
           +
         </button>
         <button
-          @click="cartStore.removeAllOfProduct(item.product.id)"
+          @click="cartStore.removerTodosProdutos(item.product.id)"
           class="btn btn-sm btn-danger ms-2"
         >
           <i class="bi bi-trash">X</i>
@@ -44,7 +44,7 @@
 
 <script setup>
 import { defineProps } from 'vue'
-import { useCarrinhoStore } from '@/stores/cart'
+import { useCarrinhoStore } from '@/stores/carrinho'
 
 const cartStore = useCarrinhoStore()
 
