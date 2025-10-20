@@ -12,20 +12,17 @@ Repositório criado para armazenar o codigo fonte do teste da empresa Grupo Smar
 
 Clonar o Projeto no Terminal:
 
-Abra seu terminal (CMD ou PowerShell).
+Abra seu terminal (CMD, PowerShell ou github) na pasta desejada.
 
-Use o comando cd para navegar até o diretório onde você quer salvar o projeto, como no exemplo abaixo:
+Com o terminal aberto execute o comando git clone com a chave HTTPS ou SSH copiada do repositório utilizando o comando abaixo:
 
-- Diretório de exemplo: C:\Projetos\Desenvolvimento.
-- Comando: cd Desenvolvimento.
-
-Execute o comando git clone com a URL ou SSH com o comando abaixo:
-
-- git clone [URL ou SSH]
+- Chave HTTPS: https://github.com/KennedyMartinsB/Desafio-Dev-Front-End-Pleno---Grupo-Smarti.git
+- Chave SSH: git@github.com:KennedyMartinsB/Desafio-Dev-Front-End-Pleno---Grupo-Smarti.git
+- git clone [HTTPS ou SSH]
 
 Depois de clonar o repositírio acesse a pasta do mesmo com o comando abaixo:
 
-- cd nome-do-repositorio
+- cd Desafio-Dev-Front-End-Kennedy-Martins/teste-grupo-smarti/
 
 Agora siga as instruções de instalação do projeto nos proximos passos
 
@@ -34,7 +31,8 @@ Agora siga as instruções de instalação do projeto nos proximos passos
 Após realizar os passos listados acima rode o comando abaixo no terminal(CMD, Poweshell ou Git):
 
 - npm install
-- npm i 
+- npm i
+- Observação: Ambos os comandos realizam a mesma função porem npm i é uma abreviação
 
 Os comandos acima tem a mesma função, ambos leêm o package.json e instalam as dependências do projeto
 Após realizar a instalação das dependências rode o comando abaixo para rodar o projeto:
