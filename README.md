@@ -48,4 +48,4 @@ Para finalizar a execução da aplicação vá ao terminal e pressione CTRL + C 
 
 Obrigado por ler o meu manual de instalação e boa sorte na utilização!!! 
 
-Tenha um ótimo dia ou noite :)
+Tenha um ótimo dia ou uma boa noite :)
